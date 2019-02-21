@@ -1,0 +1,1 @@
+# resend-activation-email-plugin
