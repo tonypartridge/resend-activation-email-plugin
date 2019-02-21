@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.8" group="system" method="upgrade">
+	<name>PLG_PLGRESENDACTIVATIONEMAIL</name>
+	<creationDate>2/21/19</creationDate>
+	<author>tony</author>
+	<authorEmail>your@email.com</authorEmail>
+	<authorUrl>http://your.url.com</authorUrl>
+	<copyright>A copyright</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0</version>
+	<description>PLG_PLGRESENDACTIVATIONEMAIL_XML_DESCRIPTION</description>
+
+	<!-- Scripts to run on installation -->
+	<scriptfile></scriptfile>
+
+	<!-- Language files -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_ResendActivationEmail.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_ResendActivationEmail.sys.ini</language>
+	</languages>
+
+	<!-- Plugin files -->
+	<files>
+		<filename plugin="ResendActivationEmail">ResendActivationEmail.php</filename>
+		<folder>language</folder>
+	</files>
+
+	<!-- Config parameter -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="sample"
+					type="text"
+					default="42"
+					label="PLG_PLGRESENDACTIVATIONEMAIL_SAMPLE_LABEL"
+					description="PLG_PLGRESENDACTIVATIONEMAIL_SAMPLE_DESCRIPTION"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
